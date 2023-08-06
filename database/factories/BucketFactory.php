@@ -17,7 +17,8 @@ class BucketFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'name' => fake()->name(),
+            'total_volume' => fake()->randomFloat('2', 0, 2)
         ];
     }
 }

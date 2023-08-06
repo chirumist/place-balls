@@ -13,4 +13,10 @@ class Bucket extends Model
         'id',
         '_token'
     ];
+
+    protected $fillable = [
+        'name',
+        'total_volume',
+        'empty_volume',
+    ];
 }

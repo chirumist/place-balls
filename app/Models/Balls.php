@@ -13,4 +13,10 @@ class Balls extends Model
         'id',
         '_token'
     ];
+
+    protected $fillable = [
+        'name',
+        'color',
+        'volume',
+    ];
 }

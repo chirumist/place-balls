@@ -57,9 +57,9 @@ class BallsController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(BallsRequest $request, Balls $balls)
+    public function update(BallsRequest $request, Balls $ball)
     {
-        $balls->update($request->all());
+        $ball->update($request->all());
         
         return redirect()->route('balls.index')->with('success', 'Ball has been updated!');
     }
